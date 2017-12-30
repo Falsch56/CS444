@@ -1,0 +1,60 @@
+Script started on Sun 17 Sep 2017 05:18:50 AM EDT
+tuser@tutor-vserver:~/hw1$ exitqitscp typescript2 sfenton@users.cs.umb.edu:cs444/hw1_parrt1/testio.lnx .[A[C[C[C[C[C[C[C[C[C[C[Cexit[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cscp typescript2 sfenton@users.cs.umb.edu:cs444/hw1_parrt1/testio.lnx .[K[K[K[K[K[K[K[K[K[K[K[Khw1/testio.;[Klnx .
+cp: cannot stat `typescript2': No such file or directory
+sfenton@users.cs.umb.edu's password: 
+testio.lnx                                      0%    0     0.0KB/s   --:-- ETAtestio.lnx                                    100%   31KB  31.4KB/s   00:00    
+tuser@tutor-vserver:~/hw1$ mtip -f testio.lnx
+For command help, type ~?
+For help on args, rerun without args
+Code starts at 0x100100
+Using board # 1 
+~downloading testio.lnx
+........Done.
+
+Download done, setting EIP to 100100.
+Tutor> go 100100
+Running with device TTY1
+
+Trying simple write(4 chars)...
+hi!
+write of 4 returned 4
+<doing delay>
+Trying longer write (9 chars)
+abcdefghiwrite of 9 returned 9
+<doing delay>
+
+Trying write of 80-char string...
+AABBCCDDEEFFGGHHIIJJKKLLMMNNOOPPQQRRSSTTUUVVWWXXYYZZ[[\\]]^^__``aabbccddeeffgghh
+write returned 80
+<doing delay>
+
+Type 10 chars input to test typeahead while looping for delay...
+<doing delay>
+12345678
+Got 6 chars into buf. Trying write of buf...
+123456
+Trying another 10 chars read right away...
+
+Got 0 chars on second read
+nothing in buffer
+
+
+Now turning echo off--
+
+Type 20 chars input, note lack of echoes...
+<doing delay>
+
+Trying write of buf...
+
+Asked for 20 characters; got 0
+Exception 3 at EIP=00100110: Breakpoint
+Tutor> 
+Tutor> 
+Quit handler: 
+killing process 1829 Leaving board #1
+tuser@tutor-vserver:~/hw1$ 
+tuser@tutor-vserver:~/hw1$ exit
+exit
+
+Script done on Sun 17 Sep 2017 05:19:53 AM EDT

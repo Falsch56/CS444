@@ -1,0 +1,49 @@
+Script started on Mon 13 Nov 2017 02:45:48 PM EST
+tuser@tutor-vserver:~/hw3$ mtip 0f[K[K-f tunix.lnx
+For command help, type ~?
+For help on args, rerun without args
+Code starts at 0x100100
+Using board # 1 
+~downloading tunix.lnx
+
+..........Done.
+
+Download done, setting EIP to 100100.
+Tutor> go 100100
+aaaaaaaaaazzzAAAAAAAAAAbbbbbbbbbbccccccccccSHUTTING THE SYSTEM DOWN!
+Debug log from run:
+Marking kernel events as follows:
+  ^a   COM2 input interrupt, a received
+  ~    COM2 output interrupt, ordinary char output
+  ~e   COM2 output interrupt, echo output
+  ~s   COM2 output interrupt, shutdown TX ints
+|(0-1)~~~~~~~s~~s~~s~~s~~s~~~~s~~~~~~~s~~s~~s~~s~~s|(1z-2)~~~~~~~s~~s~~s~~s~~s|(2z-3)~~~~~~~s~~s~~s~~s~~s|(3z-0)
+LEAVE KERNEL!
+
+Exception 3 at EIP=0010010b: Breakpoint
+Tutor> exit
+No such command: exit, use h command for help
+Tutor> Suspend handler: Suspending mtip, board #1--please return to it (fg command) as soon as possible
+
+[1]+  Stopped                 mtip -f tunix.lnx
+tuser@tutor-vserver:~/hw3$ exit
+exit
+There are stopped jobs.
+tuser@tutor-vserver:~/hw3$ ls
+[0m[01;32mtunix.lnx[0m  tunix_sfenton_jgriffit.script
+tuser@tutor-vserver:~/hw3$ exit
+exit
+There are stopped jobs.
+tuser@tutor-vserver:~/hw3$ ls
+[0m[01;32mtunix.lnx[0m  tunix_sfenton_jgriffit.script
+tuser@tutor-vserver:~/hw3$ cat tunx[Kix_sfenton_jgriffit.script
+tuser@tutor-vserver:~/hw3$ quit
+bash: quit: command not found
+tuser@tutor-vserver:~/hw3$ exit
+exit
+There are stopped jobs.
+tuser@tutor-vserver:~/hw3$ exit
+exit
+Continuing mtip on board 1
+
+Script done on Mon 13 Nov 2017 02:47:00 PM EST
